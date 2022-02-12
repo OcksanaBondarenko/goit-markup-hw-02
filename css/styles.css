@@ -181,6 +181,7 @@ body {
 }
 
 .address-contact-maps {
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -191,6 +192,7 @@ body {
 
 .address-contact-mail {
   font-family: inherit;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -201,6 +203,7 @@ body {
 
 .address-contact-number {
   font-family: inherit;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
