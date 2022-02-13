@@ -17,7 +17,7 @@ h1, h2, h3, h4, p {
   margin-bottom: 0;
 }
 
-ul, ol {
+ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -39,6 +39,14 @@ address {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* components */
 
 .logo {
@@ -49,6 +57,7 @@ address {
   /* identical to box height */
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 90px;
 }
 
 .logo-part {
@@ -62,6 +71,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color-theme-light);
+  margin-bottom: 10px;
 }
 
 .text {
@@ -80,9 +90,27 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
+  margin-bottom: 50px;
 }
 
+
+
 /* header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
 
 .nav-list-link {
   font-weight: 500;
@@ -90,6 +118,10 @@ address {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
+}
+
+.nav-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-list-link:hover,
@@ -102,8 +134,9 @@ address {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-
   color: var(--secondary-primary-text-color-theme-light);
+  margin-left: auto;
+  margin-right: 50px;
 }
 
 .contact-number {
@@ -124,6 +157,10 @@ address {
   color: var(--accent-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* hero */
 
@@ -143,7 +180,11 @@ address {
 }
 
 .button {
-  font-family: inherit;
+  min-width: 200px;
+  padding: 10px 32px;
+
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -162,11 +203,30 @@ address {
   cursor: pointer;
 }
 
+/* features */
+.features-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.features-list-item {
+  flex-basis: calc((100%-120px)/4);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 
 /* about-us */
-
+.about-us-list {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* team */
+
+.team {
+  background: #F5F4FA;
+}
 
 .team-list-img-name {
   font-weight: 500;
@@ -176,6 +236,7 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color-theme-light);
+  margin-bottom: 10px;
 }
 
 .team-list-img-profession {
@@ -186,6 +247,19 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-primary-text-color-theme-light);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-list-item {
+  flex-basis: calc((100%-120px)/4);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 /* footer */
